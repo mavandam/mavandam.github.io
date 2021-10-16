@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta charset="UTF-8">
+		<meta charset="UTF-8">
         <meta name="author" content="Mark VanDam">
         <!--Assignment 2 Section 3 #3 responsive design: 1 of 4-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,19 @@
         </title>
     </head>
     <body>
-        <div class="header">
-            <!--I created this image while completing a tutorial for another class, and I though it would make a cool logo. -->
-            <!--https://www.linkedin.com/learning/introducing-illustrator/live-paint-and-gradients?u=2273370 Interlocking gradient star image-->
-            <img src="SilverStar.svg" alt="Logo"/> 
+        <div class="header"> <!-- top of page -->
+            <div class="row"> <!-- creates 2 columns within header row -->
+                <div class="col-1 col-t-1"> <!-- header col 1 -->
+                    <!--I created this image while completing a tutorial for another class, and I though it would make a cool logo. -->
+                    <!--https://www.linkedin.com/learning/introducing-illustrator/live-paint-and-gradients?u=2273370 Interlocking gradient star image-->
+                    <img src="SilverStar.svg" alt="Logo"/> 
+                </div>
+                <div class="col-11 col-t-11"> <!-- header col 2 rest of page -->
+                    <h1>GEOM 101 Web Design - Assignment 2</h1>
+                </div>
+            </div>
         </div>
-        <div class="row"> <!--main page block-->
+        <div class="row"> <!--main content block-->
             <div class="col-1 col-t-1 menu"> <!--Assignment 2 Section 3 #5 - vertical Navigation bar 2 of 4 -->
                 <ul>
                     <li><a href="index.html">Primus</a></li>
@@ -27,29 +34,18 @@
                     <li><a href="index.html">Quintus</a></li><!--Placeholder Content-->
                 </ul>
             </div>
-        
+            <!-- main non-menu content 8col wide on desktop, rest of page on tablets -->
             <div class="col-8 col-t-11">
-                <h1>Custodiunt Illud Simplex, Stultus</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi velit nunc, sodales sed ante ac, imperdiet imperdiet lacus.
-                    Donec non ligula nulla. Morbi sed enim ac elit suscipit ultrices non ultricies velit. Morbi non turpis facilisis, 
-                    pellentesque sapien ut, hendrerit lorem. Praesent imperdiet mi a lectus lobortis facilisis. Duis nunc metus, hendrerit 
-                    ac nunc vel, posuere vehicula ligula. Curabitur eu mattis orci. Etiam non tortor vel erat ullamcorper feugiat. Morbi 
-                    tincidunt ligula vel augue feugiat ornare. In hendrerit lobortis magna aliquet vehicula. Duis laoreet facilisis felis 
-                    eget aliquam.</p>
-                <h2>Quod erat demonstrandum</h2>
-                <p>Phasellus eleifend at elit nec ultricies. Donec eu elit nec dolor luctus elementum et laoreet leo. Vestibulum ante ipsum 
-                    primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut erat enim, fringilla sed congue vel, aliquet id tellus. 
-                    Morbi enim velit, bibendum fermentum lobortis in, iaculis ac enim. Cras tempor pulvinar vehicula. Suspendisse sit amet nisl 
-                    nisi. Aliquam erat volutpat. Praesent sit amet ante sed lacus interdum malesuada in vel libero. Curabitur scelerisque 
-                    molestie luctus. Vivamus finibus dui ullamcorper, viverra leo sit amet, porttitor velit.</p>
-                <h3>Tacebitis, porto in</h3>
-                <p>Suspendisse potenti. Pellentesque placerat sollicitudin sodales. Morbi augue dolor, molestie et augue id, finibus bibendum 
-                    sapien. Morbi luctus, ligula efficitur scelerisque congue, felis felis dignissim felis, tincidunt volutpat nisi arcu ut eros. 
-                    Quisque sed erat a urna laoreet consequat vel quis augue. Sed id nibh vitae purus pretium consectetur. Sed sem lacus, 
-                    egestas vitae dapibus quis, volutpat quis sem. Curabitur rhoncus porttitor lobortis. Quisque laoreet, quam vel malesuada 
-                    gravida, tortor ex rutrum ante, vitae fringilla purus velit vel arcu. Proin ultrices dui sed urna aliquet vehicula. Nullam 
-                    ac neque eleifend, ultrices justo eu, aliquet leo. Phasellus ut placerat sem. Donec ullamcorper, neque gravida scelerisque 
-                    pharetra, mauris mi vestibulum ipsum, vel convallis mi nunc ac erat. Ut vitae neque vitae arcu rutrum luctus non eget nisi.</p>
+                <h2>Overview</h2>
+                <p>This assignment is to create a personal website using HTML and CSS, and post it on Github Pages. </p>
+                <h3>Section 3 Included Items</h3>
+                <p>I have included 4 items for grading, the top 3 will apply, and the lowest score item will be dropped. </p>
+                <ul>
+                    <li>1. Table of values. This can be found on <a href="page3.html">Page 3</a></li>
+                    <li>3. Responsive Design - displays content differently depending on device (ie desktop vs tablet vs phone)</li>
+                    <li>5. Navigation bars - can be seen on the Left side of page. i have selected a vertical navigation bar. </li>
+                    <li>6. External Links - This can be found in the table on <a href="page3.html">Page 3</a></li>
+                </ul>
                 <h3>Quorum Commune Communitatus</h3>
                 <p>Aenean pretium vestibulum lacus. Duis elementum interdum ligula eget varius. In hac habitasse platea dictumst. Cras ante nibh, 
                     cursus ac semper ut, sollicitudin et ipsum. Aenean hendrerit orci vitae efficitur dictum. Nam mattis lacus nulla, ac viverra 
@@ -65,6 +61,7 @@
                     consectetur dictum nisl eros quis sem. Mauris imperdiet gravida urna, quis faucibus nibh iaculis non. Donec 
                     facilisis porta ligula, sed consequat odio rutrum nec. Integer elementum ligula facilisis, ultrices odio eu, ornare enim.</p>
             </div>
+            <!-- left side content -->
             <div class="col-3 col-t-12">
                 <div class="aside">
                     <img src="L.png" alt="Gothic 'L'"/>
@@ -77,6 +74,7 @@
                 </div>
             </div>
         </div>
+        <!-- footer at bottom of page, one col  -->
         <div class="footer">
             <p>By: Mark VanDam</p>
         </div>
