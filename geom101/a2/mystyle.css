@@ -93,7 +93,6 @@
     .col-t-10 {width: 83.33%;}
     .col-t-11 {width: 91.66%;}
     .col-t-12 {width: 100%;}
-    body {background-color: purple;}
 }
 /* For desktops: with screen width greater than 768px*/
 @media only screen and (min-width: 768px) {
@@ -109,7 +108,6 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-    body {background-color: yellow;} /*for TS screen size issues*/
 }
 
 h1 {
@@ -149,7 +147,7 @@ p {
 }
 
 /* */
-/* inspired by CSS Grid https://www.w3schools.com/css/css_grid.asp */
+/* adapted from CSS Grid https://www.w3schools.com/css/css_grid.asp */
 .tabgrid {
     display: grid;
     grid-template-columns: auto auto auto;
