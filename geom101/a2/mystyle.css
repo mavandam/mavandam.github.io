@@ -1,0 +1,194 @@
+* {
+    /* applies to all elements include paddng and margin in item size*/
+    box-sizing: border-box; 
+}
+
+a {
+    font-family: "Algerian";
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+a:hover {
+    background-color: #666;
+    color: white;
+}
+
+/*formats rows to have multiple adjacent items*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] { /* applies to all col- classes */
+    float: left;
+    padding: 5px;
+}
+
+/*formatting for header */
+.header {
+    padding: 0px;
+}
+.header img {
+    width: 8.33%;
+    min-width: 100px;
+}
+.header .row h1 {
+    vertical-align: middle;
+    font-family: "Algerian";
+    font-size: 2em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/*formatting for vert nav bar on left*/
+.menu {
+    background-color: #ccc;
+}
+.menu ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    min-width:100px;
+}
+.menu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*background-color: #ccc;*/
+}
+.menu li a {
+    display: block;
+    font-family: "Algerian";
+    font-size: 14pt;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 5px;
+    text-align: center;
+}
+.menu li a:hover {
+    background-color: #666;
+    color: white;
+}
+.menu li::marker {
+    display:none; /*removes icon from list elements*/
+}
+
+/*formatting for info on right side of screen on desktops*/
+.aside {
+    padding: 15px;
+    font-size: 14px;
+    float: right;
+}
+.aside img {
+    width:100%;
+}
+  
+/* formatting for footers*/
+.footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/*Assignment 2 Section 3 #3 - responsive design 1 of 3*/
+/*Adapted from W3Schools Reponsive CSS https://www.w3schools.com/css/css_rwd_intro.asp*/ 
+
+/* For mobile phones: col- set width to screen*/
+[class*="col-"] {
+    width: 100%;
+}
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+/* For desktops: with screen width greater than 1024px*/
+@media only screen and (min-width: 1024px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+h1 {
+    font-family: "Algerian";
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Algerian";
+    font-size: 1.5em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Algerian";
+    font-size: 1em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p { 
+    text-align: justify;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+/* */
+/* adapted from CSS Grid https://www.w3schools.com/css/css_grid.asp */
+.tabgrid {
+    display: grid;
+    grid-template-columns: auto auto auto; /*table with 3 cols*/
+}
+.tabitem {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tabhead {
+    background-color: #ccc; /*header background color*/
+    font-weight: bold; /*bold text in header*/
+}
+
+.tabback {
+    background-color: rgb(248, 248, 248); /*alternate row background color*/
+}
+
+
+
