@@ -173,6 +173,7 @@ p {
 /* */
 /* adapted from CSS Grid https://www.w3schools.com/css/css_grid.asp */
 .tabgrid {
+    margin-top: 20px; /*add a bit of space after sentence*/
     display: grid;
     grid-template-columns: auto auto auto; /*table with 3 cols*/
 }
