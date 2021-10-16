@@ -73,13 +73,12 @@
 }
 
 /*Assignment 2 Section 3 #3 - responsive design 1 of 3*/
-/*inspired by W3Schools Reponsive CSS https://www.w3schools.com/css/css_rwd_intro.asp*/ 
+/*Adapted from W3Schools Reponsive CSS https://www.w3schools.com/css/css_rwd_intro.asp*/ 
 
 /* For mobile phones: col- set width to screen*/
 [class*="col-"] {
     width: 100%;
 }
-
 /*For Tablets*/
 @media only screen and (min-width: 600px) {
     .col-t-1 {width: 8.33%;}
@@ -94,6 +93,7 @@
     .col-t-10 {width: 83.33%;}
     .col-t-11 {width: 91.66%;}
     .col-t-12 {width: 100%;}
+    body {background-color: purple;}
 }
 /* For desktops: with screen width greater than 768px*/
 @media only screen and (min-width: 768px) {
@@ -109,6 +109,7 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    body {background-color: yellow;} /*for TS screen size issues*/
 }
 
 h1 {
