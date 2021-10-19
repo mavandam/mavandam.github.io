@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     /* applies to all elements include paddng and margin in item size*/
     box-sizing: border-box; 
@@ -189,5 +191,27 @@ p {
 }
 
 .tabback {
-    background-color: rgb(248, 248, 248); /*alternate row background color*/
+    background-color: rgb(246, 246, 246); /*alternate row background color*/
+}
+
+/*table formatting*/
+table {
+    border-collapse: unset;
+    border-spacing: 0px;
+    border: 1px solid black;
+}
+table th {
+    text-align: left;
+    border: 1px solid black;
+    background-color: #ccc; /*header row background color*/
+    font-family: "Algerian";
+    font-size: 1em;
+    font-weight: bold;
+}
+table tr, td {
+    padding: 5px;
+    border: 1px solid black;
+}
+table tr:nth-child(odd) {
+    background-color: rgb(244, 244, 244); /*alternate row background color*/
 }
